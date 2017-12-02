@@ -1,8 +1,8 @@
 package runstats
 
 import (
-	"flag"
 	"fmt"
+	"github.com/namsral/flag"
 	"os"
 	"runtime"
 	"strconv"
