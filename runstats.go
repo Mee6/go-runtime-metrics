@@ -13,11 +13,11 @@ import (
 )
 
 var (
-	statsd *string = flag.String("statsd", "localhost:8125", "Statsd host:port pair")
-	prefix *string = flag.String("metric-prefix", "<detect-hostname>", "Metric prefix path; detects the local hostname by default")
+	statsd *string = flag.String("statsd_host", "localhost:8125", "Statsd host:port pair")
+	prefix *string = flag.String("metric_prefix", "<detect-hostname>", "Metric prefix path; detects the local hostname by default")
 	pause  *int    = flag.Int("pause", 10, "Collection pause interval")
 
-	publish *bool = flag.Bool("publish-runtime-stats", true, "Collect go runtime statistics")
+	publish *bool = flag.Bool("publish_runtime_stats", true, "Collect go runtime statistics")
 	cpu     *bool = flag.Bool("cpu", true, "Collect CPU Statistics")
 	mem     *bool = flag.Bool("mem", true, "Collect Memory Statistics")
 	gc      *bool = flag.Bool("gc", true, "Collect GC Statistics (requires Memory be enabled)")
